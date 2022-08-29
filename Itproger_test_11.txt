@@ -17,6 +17,7 @@ git add css/
 
 git add css/*.scss
 # добавляем все файлы с расширением .scss из папки css
+# /some/**/*.txt  - внутри папки some беру все папки и игнирирую все файлы с расширением txt
 
 5) # сначала загрузим index.html
 git add index.html
@@ -53,3 +54,18 @@ Initial commit
 
 # происходит commit и данные заносятся в репозиторий
 git status
+
+git add .
+
+# чтобы обойти редактор win
+git commit -m 'Change test_11.txt'
+
+git status
+
+8) # для игнорирования создаем новый файл .gitignore
+# внути файла указываем какие файлы и папки мы игнорируем
+# указываем папки
+/bin
+/admin
+/config
+*.sass
